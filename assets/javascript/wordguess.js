@@ -34,7 +34,7 @@ var wordGame = {
         if (strConvertType === computerGuessWord) {
          //write an alert("Congratulation. 
          //You've won!"), increments wins and call this.wins and  this.resetGame()
-         alert("Congratulation You've won!");
+         alert("Congratulations, you've won!");
          this.wins++;
          this.resetGame();
         }
