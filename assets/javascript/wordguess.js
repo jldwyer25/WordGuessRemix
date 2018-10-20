@@ -1,9 +1,10 @@
+
 var numberOfRemainingGuesses = 12; //initialize to always 12 from the start
 var computerGuessWord = ""; //this stores the selected random word until user wins or losses
 var wrongGuessWord = ""; //this stores the letter concatenation everytime it's the wrong letter guess.
 var rightGuessWord = [];//this stores the corrected key pressed letter guess according to the index of computerGuessWord that stores the selected random word
 var inputKeypressed = ""; // this stores the key pressed letter
-var randomWord = ["Bootcamp", "Developer", "Northwestern", "Evanston", "Campus"];
+var randomWord = ["Szechuan", "Rangoon", "ChowMein", "EggRoll", "GeneralTso"];
 //wordGame object has the property values and methods to play this word guessing game.
 var wordGame = {
     wins: 0,  //initialize win to 0, going forward it will increment based off of the number of corrected word guesses from the user.
@@ -70,7 +71,7 @@ var wordGame = {
         if (isFound == false && wrongGuessWord.indexOf(inputKeypressed) === -1) {
            //3. use global variable called wrongGuessWord 
            //to do a string concatenation with inputKeypressed that includes an empty space
-           wrongGuessWord += inputKeypressed+" ";//        wrongGuessWord=wrongGuessWord + inputKeypressed + " "
+           wrongGuessWord += inputKeypressed+" ";
            //4. it decrements the global variable numberOfRemainingGuesses
            numberOfRemainingGuesses--;
   
